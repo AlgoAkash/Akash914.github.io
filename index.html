@@ -13,8 +13,11 @@
     <header>
         <a href="#" class="logo">Akash</a>
 
+        <!-- Menu Icon for Mobile Navigation -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
         <nav>
-            <a href="#" class="active"> Home</a>
+            <a href="#" class="active">Home</a>
             <a href="https://algoakash.github.io/projects.github.io/">Projects</a>
             <a href="#">Skills</a>
             <a href="#">Education</a>
@@ -22,6 +25,7 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
             <img src="main.jpg" alt="">
@@ -39,16 +43,26 @@
                     href="https://www.linkedin.com/in/akash-kumar-b98393286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
                         class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/AlgoAkash"><i class="fa-brands fa-github"></i></a>
-                <!-- <a href="#"><i class="fa-brands fa-gmail"></i></a> -->
                 <a href="https://www.instagram.com/akash_parcha69/profilecard/?igsh=cjRsNm53MjI1amM3"><i
                         class="fa-brands fa-instagram"></i></a>
             </div>
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+
     <marquee>
-       <div class="h2"> <h2>Website is under construction</h2></div>
+        <div class="h2">
+            <h2>Website is under construction</h2>
+        </div>
     </marquee>
+
+    <!-- JavaScript for Toggling Navbar -->
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
